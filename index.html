@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyA-xAcRTUNLL9flSC0M8W5Fg7ZZptYpDDU",
+            authDomain: "web-development-95276.firebaseapp.com",
+            databaseURL: "https://web-development-95276-default-rtdb.firebaseio.com",
+            projectId: "web-development-95276",
+            storageBucket: "web-development-95276.appspot.com",
+            messagingSenderId: "714385441515",
+            appId: "1:714385441515:web:bfbbff0f5a4c52516334ae",
+            measurementId: "G-RVDQ89N429"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+    <div>
+
+
+        <h1 id="message"></h1>
+        <input type="email" id="email" placeholder="Email Address" />
+        <input type="password" id="password" placeholder="Password" />
+        <button onclick="SignUp()">Sign Up</button>
+        <button onclick="SignIn()">Log in</button>
+        <button onclick="LogOut()">Log Out</button>
+        <!-- <button onclick="CurrentUser()">Current User</button> -->
+        <!-- <button onclick="UpdateUser()">Update User</button> -->
+        <!-- <button onclick="UpdateUserEmail()">Update User Email</button> -->
+        <button onclick="ResendEmail()">Resend Email</button>
+        <button onclick="ResetEmail()">Reset Password</button>
+        <!-- <button onclick="DeleteAccount()">Delete Account</button> -->
+        <button onclick="LoginWithGoogle()">Log in with google</button>
+    </div>
+    <hr />
+    <h1>Add data</h1>
+    <input type="text" placeholder="Type something...." id="addDataInput" />
+    <button onclick="AddData()">Add Data</button>
+    <p id="addDataMessage"></p>
+</body>
+<script src="app.js"></script>
+
+</html>
